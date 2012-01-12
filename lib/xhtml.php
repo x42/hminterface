@@ -27,29 +27,27 @@ function caps($s){
   return(strtoupper(substr($s,0,1)).substr($s,1));
 }
 
-function xhtml_topmenu($req, $res) {
-	global $LANG;
+function xhtml_topmenu($req) {
+	global $LANG, $keys;
   echo '
   <div class="pageheader">
     <div class="menubox">
-      <a href=""><img src="static/img/hmi_fr.png" alt="HMInterface.com" class="enabled" /></a>
-      <a href=""><img src="static/img/about_fr.png" alt="About" class="enabled" /></a>
-      <a href=""><img src="static/img/interfaces_fr.png" alt="Interfaces" class="enabled" /></a>
-      <a href=""><img src="static/img/contribute_fr.png" alt="Contribute" class="enabled" /></a>
+      <a href="?"><img src="static/img/hmi_fr.png" alt="HMInterface.com" class="enabled" /></a>
+      <a href="?page=about"><img src="static/img/about_fr.png" alt="About" class="enabled" /></a>
+      <a href="?page=interfaces"><img src="static/img/interfaces_fr.png" alt="Interfaces" class="enabled" /></a>
+      <a href="?page=contribute"><img src="static/img/contribute_fr.png" alt="Contribute" class="enabled" /></a>
     </div>
 		<div class="navigation">
-		<ul>
-			<li>pointage</li>
-			<li>.</li>
-			<li>capture</li>
-			<li>.</li>
-			<li>memoire</li>
-			<li>.</li>
-			<li>simulation</li>
-			<li>.</li>
-			<li>affichage</li>
-			<li>.</li>
-			<li>impression</li>
+		<ul>';
+	$nav=array();
+	foreach ($keys as $k => $n) {
+		if ($k == $req['key'])
+			$nav[]='<li><b>'.$n.'</b></li>';
+		else
+			$nav[]='<li><a href="'.BASE_URL.'?key='.$k.'&amp;idx='.get_key_index($k).'">'.$n.'</a></li>';
+	}
+	echo implode($nav, '<li>.</li>');
+	echo '
 		</ul>
     </div>
   </div>

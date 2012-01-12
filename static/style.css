@@ -37,7 +37,27 @@ div.navigation li {
 	margin:0 .5em;
 }
 
-/* CONTENT */
+div.fl a,
+div.pageheader a {
+	color:#ccc;
+}
+
+/* PAGES */
+div.page {
+	width:800px;
+	margin:20px auto 1em auto;
+}
+
+div.iflist div.fl {
+	float:left;
+	margin:.5em 10px;
+	text-align:center;
+}
+div.iflist img {
+	width:240px;
+}
+
+/* CONTENT -- IHM */
 
 div.container {
 	min-width:800px;

@@ -1,7 +1,7 @@
 <?php
 
 function fmt_url ($item) {
-	return BASE_URL.'?k='.$item['key'].'&amp;i='.$item['idx'];
+	return BASE_URL.'?key='.$item['key'].'&amp;idx='.$item['idx'];
 }
 
 function fmt_item ($item, $opt=0) {
