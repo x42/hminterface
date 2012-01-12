@@ -44,8 +44,12 @@ $grey  = imagecolorallocate($im, 128, 128, 128);
 $black = imagecolorallocate($im, 0, 0, 0);
 $color = hsl2rgb($im, (ord($key)%8)/8.0, 1.0-(($idx%6)/6.0), .8-(($idx%6)/12.0));
 
-imagefilledrectangle($im, 0, 0, $w-1, $h-1, $black);
-imagefilledrectangle($im, 2, 2, $w-3, $h-3, $color);
+if (0) {
+	imagefilledrectangle($im, 0, 0, $w-1, $h-1, $black);
+	imagefilledrectangle($im, 2, 2, $w-3, $h-3, $color);
+} else {
+	imagefilledrectangle($im, 0, 0, $w-1, $h-1, $color);
+}
 
 // determine center of image
 $bbox = ImageTTFBBox($fontsize, $angle, $font, $text);
