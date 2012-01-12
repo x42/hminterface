@@ -40,12 +40,14 @@ div.navigation li {
 div.fl a,
 div.pageheader a {
 	color:#ccc;
+	text-decoration:none;
 }
 
 /* PAGES */
 div.page {
 	width:800px;
 	margin:20px auto 1em auto;
+	text-align:justify;
 }
 
 div.iflist div.fl {

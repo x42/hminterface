@@ -46,7 +46,7 @@ function xhtml_topmenu($req) {
 		else
 			$nav[]='<li><a href="'.BASE_URL.'?key='.$k.'&amp;idx='.get_key_index($k).'">'.$n.'</a></li>';
 	}
-	echo implode($nav, '<li>.</li>');
+	echo implode($nav, '<li>&middot;</li>');
 	echo '
 		</ul>
     </div>

@@ -41,4 +41,3 @@ $data[6] = array (
 	gen_item(6,0), gen_item(6,1), gen_item(6,2), gen_item(6,3),
 	gen_item(6,4), gen_item(6,5), gen_item(6,6), gen_item(6,7),
 );
-
