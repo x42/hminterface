@@ -113,11 +113,20 @@ table.xmatrix td div.empty {
 
 table.xmatrix td div.osd {
 	position:absolute;
-	left:1em;
-	bottom:1em;
-	background:#666;
+	background: transparent url('img/dim.png') top left repeat;
 	padding:.25em;
 	border:1px solid #ccc;
+}
+
+table.xmatrix td div.date {
+	top:.5em;
+	right:.5em;
+	font-weight:bold;
+}
+
+table.xmatrix td div.title {
+	left:.5em;
+	bottom:.5em;
 }
 
 table.xmatrix td div img {
@@ -126,18 +135,18 @@ table.xmatrix td div img {
 	left:0px;
 }
 /* td - above - width:448px height:252px  16:9 */
-table.xmatrix td.tb          { height:86px; }
-table.xmatrix td.lr1         { width:160px; }
-table.xmatrix td.lr2         { width:36px; }
+table.xmatrix td.tb            { height:86px; }
+table.xmatrix td.lr1           { width:160px; }
+table.xmatrix td.lr2           { width:36px; }
 
-table.xmatrix td.tb div      { }
-table.xmatrix td.tb div img  { top:-83px; }
+table.xmatrix td.tb div.c      { }
+table.xmatrix td.tb div img    { top:-83px; }
 
-table.xmatrix td.lr1 div     { width:160px }
-table.xmatrix td.lr1 div img { left:-144px;	}
+table.xmatrix td.lr1 div.c     { width:160px }
+table.xmatrix td.lr1 div.c img { left:-144px;	}
 
-table.xmatrix td.lr2 div     { width:36px; }
-table.xmatrix td.lr2 div img { left:-206px;	}
+table.xmatrix td.lr2 div.c     { width:36px; }
+table.xmatrix td.lr2 div.c img { left:-206px;	}
 
 /* Descriptive Text */
 div.itemdesc {
