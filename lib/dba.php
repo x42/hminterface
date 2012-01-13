@@ -1,7 +1,19 @@
 <?php
-require_once(IHM_LIB.'data.php');
-# Data Base Access
 
+# Data Base Access functions
+require_once(IHM_LIB.'data.php');
+
+function get_items($key) {
+	global $data;
+	return $data[$key];
+}
+
+function get_item($key, $idx) {
+	$items=get_items($key);
+	return $items[$key];
+}
+
+# get ID of previous/next group
 function keycircle($key, $add=0) {
 	global $keys;
 	$kcnt=count($keys);
@@ -13,10 +25,12 @@ function keycircle($key, $add=0) {
 	return $key;
 }
 
+# calulate time difference between two items
 function datetimediff($a, $b) {
 	return abs($a['date'] - $b['date']);
 }
 
+# create an item for next/prev group link
 function keyitem($key, $item) {
 	# use topic-image; but link to an item
 	# closest in time to $item
@@ -37,8 +51,8 @@ function keyitem($key, $item) {
 	);
 }
 
+# start-item for each group. image closest to 2010
 function get_key_index($key) {
-	# start-item for each group. image closest to 2010
 	$diff = 1000000;
 	$idx  = 0;
 	$iter = 0;
@@ -58,15 +72,6 @@ function get_key_index_old($key) {
 	return 0;
 }
 
-function get_items($key) {
-	global $data;
-	return $data[$key];
-}
-
-function get_item($key, $idx) {
-	$items=get_items($key);
-	return $items[$key];
-}
 
 function sanitize_key($key) {
 	global $keys;

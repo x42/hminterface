@@ -2,7 +2,7 @@
 
 require_once('config.php');
 require_once(IHM_LIB.'xhtml.php');
-require_once(IHM_LIB.'pages.php');
+require_once(IHM_LIB.'output.php');
 require_once(IHM_LIB.'dba.php');
 
 $idx=-1;

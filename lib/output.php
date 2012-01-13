@@ -17,8 +17,12 @@ function fmt_item ($item, $opt=0) {
 	$rv.= '<a href="'.fmt_url($item).'"><img alt="" src="'.img_url($item, $opt).'" /></a>';
 	if ($opt &2)
 		$rv.='<div class="osd date">'.$item['date'].'</div>';
-	if ($opt &1)
-		$rv.='<div class="osd title">'.$item['img'].'</div>';
+	if ($opt &1) {
+		if (empty($item['title']))
+			$rv.='<div class="osd title">'.basename($item['img']).'</div>';
+		else 
+			$rv.='<div class="osd title">'.$item['title'].'</div>';
+	}
 	if ($opt &8) // was &4 -- disabled
 		$rv.='<div class="osd key">'.$keys[$item['key']].'</div>';
 	$rv.='</div>';
@@ -30,9 +34,8 @@ function gimg ($item, $idx, $opt=0) {
 }
 
 function itempagefooter ($item) {
-
 	echo '<div class="itemdesc">'.NL;
-	echo $item['text'].NL;
+	echo $item['desc'].NL;
 	echo '</div>'.NL; #end container;
 }
 
