@@ -80,7 +80,7 @@ div.clearer {
 table.xmatrix {
 	margin:.25em auto;
 	padding:0;
-	border-spacing:6px 2px;
+	border-spacing:4px 4px;
 }
 
 table.xmatrix td {
@@ -92,7 +92,7 @@ table.xmatrix td {
 	overflow:hidden;
 	margin:0;
 	padding:0;
-/*border:1px solid blue; */
+/*border:1px solid blue;*/
 }
 
 table.xmatrix td div {
@@ -127,6 +127,14 @@ table.xmatrix td div.title {
 	bottom:.5em;
 }
 
+table.xmatrix td div.key {
+	width:80%;
+	text-align:center;
+	left:10%;
+	top:35%;
+	font-size:115%;
+}
+
 table.xmatrix td div img {
 	position:relative;
 	top:0px;
@@ -135,8 +143,8 @@ table.xmatrix td div img {
 /* td - above - width:448px height:252px  16:9 */
 table.xmatrix td div.c         { height:252px; }
 table.xmatrix td.tb            { height:86px; }
-table.xmatrix td.lr1           { width:160px; }
-table.xmatrix td.lr2           { width:36px; }
+table.xmatrix td.lr1           { width:164px; }
+table.xmatrix td.lr2           { width:40px; }
 
 table.xmatrix td.tb div.c      { height:86px; }
 table.xmatrix td.tb div img    { top:-83px; }
