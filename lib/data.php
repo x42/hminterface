@@ -103,21 +103,33 @@ array('date' => "1990", 'img'=> 'camera/camera-1990-sony_phone.jpg'),
 
 $keyimg[6] = 'diodes/Diode-diodeelectroluminescente-1960-SB.jpg';
 $data[6] = array (
-array('date' => "1903", 'img'=> 'diodes/Diode-1904-SB.jpg'),
-array('date' => "1906", 'img'=> 'diodes/Diode-Triode_tube_1906-SB.jpg'),
-array('date' => "1937", 'img'=> 'diodes/Diode-additionneurbinaire-1937-SB.jpg'),
-array('date' => "1940", 'img'=> 'diodes/le-circuit-imprime_1940-SB.jpg'),
-array('date' => "1942", 'img'=> 'diodes/Diode-Germanium_Diode_1942-SB.jpg'),
-array('date' => "1947", 'img'=> 'diodes/Diode-transistorbipolaire_1947-SB.jpg'),
-array('date' => "1954", 'img'=> 'diodes/Diode-transistorausillicium-1954-SB.jpg'),
-array('date' => "1959", 'img'=> 'diodes/Diode-schéma_circuit_intégré-1959-SB.jpg'),
-array('date' => "1960", 'img'=> 'diodes/Diode-diodeelectroluminescente-1960-SB.jpg'),
-array('date' => "1971", 'img'=> 'diodes/Processeur-4004intel-1971-Intel-SB.jpg'),
-array('date' => "1974", 'img'=> 'diodes/Diode-carteapuce-1974-SB.jpg'),
-array('date' => "2001", 'img'=> 'diodes/Itanium-2001-SB.jpg'),
-array('date' => "2003", 'img'=> 'diodes/Processeur-AMD_Opteron_2003-SB.jpg'),
+	array('date' => "1904", 'title'=> 'Diode par John FLEMING', 'img'=> 'diodes/Diode-1904-SB.jpg',
+	      'desc' => 'Premier tube à vide.'),
+	array('date' => "1907", 'title'=> 'Triode (Lampe) par L. DE FOREST', 'img'=> 'diodes/Diode-Triode_tube_1906-SB.jpg',
+        'desc' => 'Mise au point à partir de la diode de J. FLEMMING, sur laquelle il rajoute une feuille métallique, "l\'audion" qui s\'appellera ensuite "triode" est un amplificateur d\'intensité électrique. La première "lampe" réellement utilisable a été mise au point en France par H. ABRAHAM et utilisée par l\'ensemble des Alliés pendant la première guerre mondiale, d\'où son nom : Lampe TM (pour Télégraphie Militaire).'),
+	array('date' => "1937", 'title'=> 'Additionneur binaire à relais par G. STIBITZ', 'img'=> 'diodes/Diode-additionneurbinaire-1937-SB.jpg',
+        'desc' => ''),
+	array('date' => "1940", 'title'=> '', 'img'=> 'diodes/le-circuit-imprime_1940-SB.jpg',
+        'desc' => ''),
+	array('date' => "1942", 'title'=> 'Diodes au germanium', 'img'=> 'diodes/Diode-Germanium_Diode_1942-SB.jpg',
+        'desc' => 'Le germanium est un semi-conducteur, c\'est à dire que "dopé" par des impuretés, il conduit dans un sens ou dans l\'autre suivant la nature de cette impureté. Par l\'association d\'un morceau de germanium dopé positivement (P) et un morceau dopé négativement (N), on obtient une diode qui ne conduit le courant que dans un seul sens.'),
+	array('date' => "1947", 'title'=> 'Le transistor bipolaire à jonction par J. BARDEEN, W. BRATTAIN et W. SCHOCKLEY', 'img'=> 'diodes/Diode-transistorbipolaire_1947-SB.jpg',
+        'desc' => 'Il est constitué d\'une très fine couche P entre deux couches N (ou bien l\'inverse). Lorsque l\'on fait circuler un faible courant entre une couche P et une couche N, un flux d\'électrons entraîne une conduction entre les deux couches de même nature: c\'est l\'effet transistor. Ce composant est à l\'origine d\'une révolution dans l\'électronique, en effet la faible énergie nécessaire pour le faire fonctionner, ainsi que sa petite taille rendent très vite les tubes obsolètes.'),
+	array('date' => "1954", 'title'=> 'Transistor au silicium', 'img'=> 'diodes/Diode-transistorausillicium-1954-SB.jpg',
+        'desc' => 'Beaucoup moins cher, plus facile à produire et à utiliser (mais hélas ayant une vitesse de conduction moins élevée) que le germanium, le silicium va devenir le symbole d\'une nouvelle ère.'),
+	array('date' => "1959", 'title'=> 'Circuit intégré par Jack KILBY', 'img'=> 'diodes/Diode-schéma_circuit_intégré-1959-SB.jpg',
+        'desc' => 'Fabriquées à l\'aide de semi-conducteurs (sous forme d\'alliage binaire de Phosphure de Gallium et d\' Arséniure de Gallium), ces diodes ont la propriété d\'émettre de la lumière dans le spectre infrarouge ou visible. Leurs principales qualités sont une très faible consommation, une grande rapidité et une durée de vie quasi-illimitée.'),
+	array('date' => "1960", 'title'=> 'Diodes Électroluminescentes', 'img'=> 'diodes/Diode-diodeelectroluminescente-1960-SB.jpg',
+        'desc' => 'Fabriquées à l\'aide de semi-conducteurs (sous forme d\'alliage binaire de Phosphure de Gallium et d\' Arséniure de Gallium), ces diodes ont la propriété d\'émettre de la lumière dans le spectre infrarouge ou visible. Leurs principales qualités sont une très faible consommation, une grande rapidité et une durée de vie quasi-illimitée.'),
+	array('date' => "1971", 'title'=> 'Le premier microprocesseur: le 4004 d\'Intel', 'img'=> 'diodes/Processeur-4004intel-1971-Intel-SB.jpg',
+        'desc' => 'Il comporte 2300 transistors et exécute 60 000 opérations par seconde à une fréquence de 108 Khz. Sa puissance était égale à celle de l\'ENIAC'),
+	array('date' => "1974", 'title'=> 'Carte à puce par Roland MORENO', 'img'=> 'diodes/Diode-carteapuce-1974-SB.jpg',
+        'desc' => ''),
+	array('date' => "2001", 'title'=> 'Itanium', 'img'=> 'diodes/Itanium-2001-SB.jpg',
+        'desc' => 'Certes ce n\'est pas le premier processeur 64 bits à sortir mais c\'était certainement un des plus en vue. Conçu par Intel et Hewlett-Packard, il est à la croisé des architectures RISC (HP-PA) et CISC (utilisé par les processeurs Intel). Seulement il n\'a jamais vraiment rencontré de succès.  Intel Itanium Processor'),
+	array('date' => "2003", 'title'=> 'Opteron d\'AMD', 'img'=> 'diodes/Processeur-AMD_Opteron_2003-SB.jpg',
+        'desc' => 'Alors que l\'Itanium ne peux exécuter les applications 32 bits que grace à un complexe système d\'émulation, l\'Opteron est le premier microprocesseur capable de supporter des programmes 32 bits et 64 bits à pleine vitesse. L\'Opteron a également un controleur de mémore intégré alors que traditionnellement, celui-ci est séparé. Même si à l\'époque Windows n\'était pas disponible en version 64 bits, le succès de ce processeur est immédiat, en particulier pour des serveurs Linux.  AMD Opteron'),
 );
-
 
 $keyimg[7] = 'imprimante/4imprimanteHP.jpg';
 $data[7] = array (
@@ -192,10 +204,3 @@ array('date' => "2005", 'img'=> 'virtual_reality/08-AlphaBino.2005-WA.jpg'),
 array('date' => "2008", 'img'=> 'virtual_reality/09-i-glasses.i3PC.2008-WA.jpg'),
 array('date' => "2010", 'img'=> 'virtual_reality/10-Casque.Cocoon.2010-WA.jpg'),
 );
-
-
-#$keyimg[6] = 'fakeimg.php?key=X&amp;idx=-6';
-#$data[6] = array (
-#	gen_item(6,0), gen_item(6,1), gen_item(6,2), gen_item(6,3),
-#	gen_item(6,4), gen_item(6,5), gen_item(6,6), gen_item(6,7),
-#);
