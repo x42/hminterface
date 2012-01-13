@@ -99,8 +99,6 @@ table.xmatrix td div {
 	background:white;
 	position:relative;
 	overflow: hidden;
-	max-width:100%;
-	max-height:100%;
 	margin:0px auto;
 	text-align:center;
 	vertical-align:middle;
@@ -135,14 +133,15 @@ table.xmatrix td div img {
 	left:0px;
 }
 /* td - above - width:448px height:252px  16:9 */
+table.xmatrix td div.c         { height:252px; }
 table.xmatrix td.tb            { height:86px; }
 table.xmatrix td.lr1           { width:160px; }
 table.xmatrix td.lr2           { width:36px; }
 
-table.xmatrix td.tb div.c      { }
+table.xmatrix td.tb div.c      { height:86px; }
 table.xmatrix td.tb div img    { top:-83px; }
 
-table.xmatrix td.lr1 div.c     { width:160px }
+table.xmatrix td.lr1 div.c     { width:160px; }
 table.xmatrix td.lr1 div.c img { left:-144px;	}
 
 table.xmatrix td.lr2 div.c     { width:36px; }
