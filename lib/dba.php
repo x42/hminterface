@@ -64,6 +64,20 @@ function keyitem($key, $item) {
 }
 
 function get_key_index($key) {
+	$diff = 1000000;
+	$idx  = 0;
+	$iter = 0;
+	$item=array('date' => '2010');
+
+	foreach (get_items($key) as $i) {
+		$mdiff = datetimediff($i, $item);
+		if ($mdiff < $diff) { $idx=$iter; $diff=$mdiff; }
+		$iter++;
+	}
+	return $idx;
+}
+
+function get_key_index_old($key) {
 	# start-item for each group.
 	$c = count(get_items($key))-1;
 	if ($c>2) return $c-2;

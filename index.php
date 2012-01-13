@@ -19,7 +19,7 @@ if (isset ($_REQUEST['page']))
 /* process request, gather data */
 $pages=array('about', 'interfaces', 'contribute');
 
-$d=null; $p='home';
+$d=null; $p='interfaces';
 
 if (in_array($page, $pages)) {
 	$p=$page;

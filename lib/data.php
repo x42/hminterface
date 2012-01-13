@@ -50,13 +50,13 @@ array('date' => "2101", 'img'=> 'tel/Tel-Star_Wars_hologram_FB.jpg'),
 
 $keyimg[2] = 'key/5amarina-clavier-pliable-1.jpg';
 $data[2] = array (
-array('date' => "1800", 'img'=> 'key/1calame3200av.jpg'),
+array('date' => "1500", 'img'=> 'key/1calame3200av.jpg'),
 array('date' => "1920", 'img'=> 'key/2clavier_horton_premier1890.jpg'),
 array('date' => "1950", 'img'=> 'key/3machine-a-ecrire.jpg'),
-array('date' => "1970", 'img'=> 'key/4clavier.jpg'),
-array('date' => "1980", 'img'=> 'key/5amarina-clavier-pliable-1.jpg'),
-array('date' => "1990", 'img'=> 'key/6clavier_nokey1.jpg'),
-array('date' => "2000", 'img'=> 'key/7celluon-magic-cube.jpg'),
+array('date' => "1995", 'img'=> 'key/4clavier.jpg'),
+array('date' => "1998", 'img'=> 'key/5amarina-clavier-pliable-1.jpg'),
+array('date' => "2000", 'img'=> 'key/6clavier_nokey1.jpg'),
+array('date' => "2010", 'img'=> 'key/7celluon-magic-cube.jpg'),
 );
 
 
@@ -126,10 +126,10 @@ array('date' => "0", 'img'=> 'imprimante/2a1351-940-thickbox.jpg'),
 array('date' => "0", 'img'=> 'imprimante/2plume_encrier.jpg'),
 array('date' => "800", 'img'=> 'imprimante/2qXylographie_8siecle.jpg'),
 array('date' => "1450", 'img'=> 'imprimante/3_Imprimerie_Gutenberg1450.jpg'),
-array('date' => "2000", 'img'=> 'imprimante/4canon_clc_3220.jpg'),
+array('date' => "1990", 'img'=> 'imprimante/5zp_printer_350.jpg'),
 array('date' => "2000", 'img'=> 'imprimante/4imprimanteHP.jpg'),
-array('date' => "1995", 'img'=> 'imprimante/5zp_printer_350.jpg'),
-array('date' => "2000", 'img'=> 'imprimante/6polaroid_pogo_3_screen_large.jpg'),
+array('date' => "2007", 'img'=> 'imprimante/4canon_clc_3220.jpg'),
+array('date' => "2008", 'img'=> 'imprimante/6polaroid_pogo_3_screen_large.jpg'),
 );
 
 $keyimg[8] = 'memoire/8-disquemagnétique-1977-Intel-SB.jpg';
