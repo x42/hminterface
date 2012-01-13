@@ -27,6 +27,10 @@ function caps($s){
   return(strtoupper(substr($s,0,1)).substr($s,1));
 }
 
+function js_hover($id, $img) {
+  return ' onmouseover="linkhover(\''.$id.'\', \''.$img.'-a.png\')" onmouseout="linkhover(\''.$id.'\', \''.$img.'.png\')"';
+}
+
 function xhtml_topmenu($req) {
 	global $LANG, $keys;
   echo '
@@ -34,9 +38,9 @@ function xhtml_topmenu($req) {
     <div class="menubox">
 			<ul>
 				<li><a href="?"><img src="static/img/hmi_fr.png" alt="HMInterface.com" class="enabled" /></a></li>
-				<li><a href="?page=about"><img src="static/img/about_fr.png" alt="About" class="enabled" /></a></li>
-				<li><a href="?page=interfaces"><img src="static/img/interfaces_fr.png" alt="Interfaces" class="enabled" /></a></li>
-				<li><a href="?page=contribute"><img src="static/img/contribute_fr.png" alt="Contribute" class="enabled" /></a></li>
+				<li'.js_hover('a_about','about_fr').'><a href="?page=about"><img id="a_about" src="static/img/about_fr.png" alt="About" class="enabled" /></a></li>
+				<li'.js_hover('a_if','interfaces_fr').'><a href="?page=interfaces"><img id="a_if" src="static/img/interfaces_fr.png" alt="Interfaces" class="enabled" /></a></li>
+				<li'.js_hover('a_contib','contribute_fr').'><a href="?page=contribute"><img id="a_contib" src="static/img/contribute_fr.png" alt="Contribute" class="enabled" /></a></li>
 			</ul>
     </div>
     <div class="clearer"></div>
