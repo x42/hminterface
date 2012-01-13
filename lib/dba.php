@@ -94,11 +94,10 @@ function query_data($key, $idx) {
 		while (count($grps)<5) array_unshift($grps, null);
 	}
 
-	$i=$idx-2;
-	for ($i=$idx-2;$i<=$idx+2;$i++) {
+	for ($i=0;$i<5;$i++) {
 		if (!is_array($grps[$i])) continue;
-			$item['key'] = $key;
-			$item['idx'] = $i;
+			$grps[$i]['key'] = $key;
+			$grps[$i]['idx'] = $i+$idx-2;
 	}
 
 	$item = $grps[2];

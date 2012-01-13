@@ -28,13 +28,13 @@ div.navigation {
 }
 div.navigation ul {
 	margin:0 auto;
-	width:920px;
+	width:960px;
 }
 div.navigation li {
 	list-style:none;
 	float:left;
-	padding:.25em 1em;
-	margin:0 .5em;
+	padding:.2em;
+	margin:0 .2em;
 }
 
 div.fl a,
@@ -96,6 +96,7 @@ table.xmatrix td {
 }
 
 table.xmatrix td div {
+	background:white;
 	position:relative;
 	overflow: hidden;
 	max-width:100%;
@@ -106,6 +107,7 @@ table.xmatrix td div {
   border:2px solid #aaa;
 }
 table.xmatrix td div.empty {
+	background:transparent;
   border:2px solid transparent;
 }
 

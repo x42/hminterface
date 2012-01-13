@@ -4,10 +4,16 @@ function fmt_url ($item) {
 	return BASE_URL.'?key='.$item['key'].'&amp;idx='.$item['idx'];
 }
 
+function img_url ($item, $opt) {
+  if ($opt & 1) 
+		return BASE_URL.'static/data/lbox/'.$item['img'];
+	return BASE_URL.'static/data/thumb/'.$item['img'];
+}
+
 function fmt_item ($item, $opt=0) {
 	if (!is_array($item)) return '<div class="empty"></div>';
 	$rv='<div>';
-	$rv.= '<a href="'.fmt_url($item).'"><img alt="" src="'.$item['img'].'" /></a>';
+	$rv.= '<a href="'.fmt_url($item).'"><img alt="" src="'.img_url($item, $opt).'" /></a>';
 	if ($opt &1) 
 		$rv.='<div class="osd">'.$item['date'].' - '.$item['title'].'</div>';
 	$rv.='</div>';
