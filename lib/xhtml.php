@@ -14,7 +14,12 @@ function htmlhead($title, $add='') {
 <?php
 }
 
-function htmlfoot() {
+function htmlfoot($alignright=false) {
+	echo '<div class="clearer"></div>'.NL;
+	echo '<div class="footer">';
+	echo '<div class="right"><a href="http://citu.fr/">CITU-H2H Lab</a></div>'.NL;
+	echo '<div class="center'.($alignright?' alignright':'').'"><a href="?page=credits">crédits</a> &middot; <a href="?page=contact">contact</a> &middot; <a href="?page=legal">mentions légales</a></div>';
+	echo '</div>'.NL;
   echo '</body>'.NL.'</html>'.NL;
 }
 

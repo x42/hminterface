@@ -141,7 +141,7 @@ $data[6] = array (
         'desc' => 'Certes ce n\'est pas le premier processeur 64 bits à sortir mais c\'était certainement un des plus en vue. Conçu par Intel et Hewlett-Packard, il est à la croisé des architectures RISC (HP-PA) et CISC (utilisé par les processeurs Intel). Seulement il n\'a jamais vraiment rencontré de succès.  Intel Itanium Processor'),
   array('date' => "2003", 'title'=> 'Opteron d\'AMD',
         'img'=> 'diodes/Processeur-AMD_Opteron_2003-SB.jpg',
-        'desc' => 'Alors que l\'Itanium ne peux exécuter les applications 32 bits que grace à un complexe système d\'émulation, l\'Opteron est le premier microprocesseur capable de supporter des programmes 32 bits et 64 bits à pleine vitesse. L\'Opteron a également un controleur de mémore intégré alors que traditionnellement, celui-ci est séparé. Même si à l\'époque Windows n\'était pas disponible en version 64 bits, le succès de ce processeur est immédiat, en particulier pour des serveurs Linux.  AMD Opteron'),
+        'desc' => 'Alors que l\'Itanium ne peux exécuter les applications 32 bits que grace à un complexe système d\'émulation, l\'Opteron est le premier microprocesseur capable de supporter des programmes 32 bits et 64 bits à pleine vitesse. L\'Opteron a également un controleur de mémore intégré alors que traditionnellement, celui-ci est séparé. Même si à l\'époque Windows n\'était pas disponible en version 64 bits, le succès de ce processeur est immédiat, en particulier pour des serveurs Linux.'),
 );
 
 $keyimg[7] = 'imprimante/4imprimanteHP.jpg';

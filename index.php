@@ -17,7 +17,7 @@ if (isset ($_REQUEST['page']))
 	$page = rawurldecode($_REQUEST['page']);
 
 /* process request, gather data */
-$pages=array('about', 'interfaces', 'contribute');
+$pages=array('about', 'interfaces', 'contribute', 'contact', 'credits', 'legal');
 
 $d=null; $p='interfaces';
 
@@ -45,4 +45,4 @@ if (is_array($d)) {
 	echo '</div>';
 }
 
-htmlfoot();
+htmlfoot(is_array($d));

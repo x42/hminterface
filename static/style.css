@@ -5,10 +5,41 @@
 
 body {
 	background:#666;
-	color:#ccc;
+	color:#CCC;
 	font-family:Andale Mono, Courier, Courier New, monospace;
 	font-size:12px;
 	min-width:940px;
+}
+
+.footer {
+	border-top:1px dotted #AAA;
+	margin:3em 0 2em 0;
+	padding-top:.5em;
+	text-align:center;
+}
+.footer a {
+	color:#CCC;
+	text-decoration:none;
+	padding:.1em .2em;
+}
+.footer a:hover {
+	background:#FFF;
+	color:#666;
+	border-radius:6px;
+}
+
+div.footer div.center{
+	width:448px;
+	margin:0 auto;
+}
+
+div.footer div.alignright{
+	text-align:right;
+}
+
+div.footer div.right{
+	float:right; margin-right:3em;
+	font-weight:bold;
 }
 
 /* HEADER & LOGO */
@@ -77,13 +108,14 @@ div.navigation a {
 
 div.fl a,
 div.pageheader a {
-	color:#ccc;
+	color:#CCC;
 	text-decoration:none;
 }
 
 /* PAGES */
 div.page {
 	width:800px;
+	min-height:400px;
 	margin:20px auto 1em auto;
 	text-align:justify;
 }
@@ -133,7 +165,7 @@ table.xmatrix td {
 }
 
 table.xmatrix td div {
-	background:white;
+	background:#FFF;
 	position:relative;
 	overflow: hidden;
 	margin:0px auto;
