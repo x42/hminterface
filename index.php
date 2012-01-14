@@ -33,7 +33,7 @@ if (!is_array($d)) {
 
 /* output */
 htmlhead('HMInterface - prospective interface archeology');
-xhtml_topmenu(array('key' => $key));
+xhtml_topmenu(array('key' => $key, 'page' => $p));
 
 if (is_array($d)) {
 	vis_imagegroup2D($d, 0, 0);

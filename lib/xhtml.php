@@ -37,10 +37,22 @@ function xhtml_topmenu($req) {
   <div class="pageheader">
     <div class="menubox">
 			<ul>
-				<li class="logoimg"><a href="?"><img src="static/img/hmi_fr.png" alt="HMInterface.com" class="enabled" /></a></li>
-				<li'.js_hover('a_contib','contribute_fr').'><a href="?page=contribute"><img class="button" id="a_contib" src="static/img/contribute_fr.png" alt="Contribute" class="enabled" /></a></li>
-				<li'.js_hover('a_if','interfaces_fr').'><a href="?page=interfaces"><img class="button" id="a_if" src="static/img/interfaces_fr.png" alt="Interfaces" class="enabled" /></a></li>
-				<li'.js_hover('a_about','about_fr').'><a href="?page=about"><img class="button" id="a_about" src="static/img/about_fr.png" alt="About" class="enabled" /></a></li>
+				<li class="logoimg"><a href="?"><img src="static/img/hmi_fr.png" alt="HMInterface.com" class="enabled" /></a></li>'.NL;
+	if ($req['page'] != 'contribute') 
+		echo '<li'.js_hover('a_contib','contribute_fr').'><a href="?page=contribute"><img class="button" id="a_contib" src="static/img/contribute_fr.png" alt="Contribute" class="enabled" /></a></li>'.NL;
+	else
+		echo '<li><a href="?page=contribute"><img class="button" id="a_contib" src="static/img/contribute_fr-c.png" alt="Contribute" class="enabled" /></a></li>'.NL;
+
+	if ($req['page'] != 'interfaces') 
+		echo '<li'.js_hover('a_if','interfaces_fr').'><a href="?page=interfaces"><img class="button" id="a_if" src="static/img/interfaces_fr.png" alt="Interfaces" class="enabled" /></a></li>'.NL;
+	else
+		echo '<li><a href="?page=interfaces"><img class="button" id="a_if" src="static/img/interfaces_fr-c.png" alt="Interfaces" class="enabled" /></a></li>'.NL;
+
+	if ($req['page'] != 'about') 
+		echo '<li'.js_hover('a_about','about_fr').'><a href="?page=about"><img class="button" id="a_about" src="static/img/about_fr.png" alt="About" class="enabled" /></a></li>'.NL;
+	else
+		echo '<li><a href="?page=about"><img class="button" id="a_about" src="static/img/about_fr-c.png" alt="About" class="enabled" /></a></li>'.NL;
+	echo ' 
 			</ul>
     <div class="clearer"></div>
     </div>
