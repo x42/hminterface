@@ -37,14 +37,14 @@ function xhtml_topmenu($req) {
   <div class="pageheader">
     <div class="menubox">
 			<ul>
-				<li><a href="?"><img src="static/img/hmi_fr.png" alt="HMInterface.com" class="enabled" /></a></li>
-				<li'.js_hover('a_about','about_fr').'><a href="?page=about"><img id="a_about" src="static/img/about_fr.png" alt="About" class="enabled" /></a></li>
-				<li'.js_hover('a_if','interfaces_fr').'><a href="?page=interfaces"><img id="a_if" src="static/img/interfaces_fr.png" alt="Interfaces" class="enabled" /></a></li>
-				<li'.js_hover('a_contib','contribute_fr').'><a href="?page=contribute"><img id="a_contib" src="static/img/contribute_fr.png" alt="Contribute" class="enabled" /></a></li>
+				<li class="logoimg"><a href="?"><img src="static/img/hmi_fr.png" alt="HMInterface.com" class="enabled" /></a></li>
+				<li'.js_hover('a_contib','contribute_fr').'><a href="?page=contribute"><img class="button" id="a_contib" src="static/img/contribute_fr.png" alt="Contribute" class="enabled" /></a></li>
+				<li'.js_hover('a_if','interfaces_fr').'><a href="?page=interfaces"><img class="button" id="a_if" src="static/img/interfaces_fr.png" alt="Interfaces" class="enabled" /></a></li>
+				<li'.js_hover('a_about','about_fr').'><a href="?page=about"><img class="button" id="a_about" src="static/img/about_fr.png" alt="About" class="enabled" /></a></li>
 			</ul>
-    </div>
     <div class="clearer"></div>
-		<div class="navigation">
+    </div>
+		<div class="navigation"><div class="centerfloat">
 		<ul>';
 	$nav=array();
 	foreach ($keys as $k => $n) {
@@ -56,7 +56,9 @@ function xhtml_topmenu($req) {
 	echo implode($nav, '<li>&middot;</li>');
 	echo '
 		</ul>
-    </div>
+		</div>
+    <div class="clearer"></div>
+		</div>
   </div>
 ';
 }

@@ -37,6 +37,7 @@ xhtml_topmenu(array('key' => $key));
 
 if (is_array($d)) {
 	vis_imagegroup2D($d, 0, 0);
+	#vis_timeline();
 } else {
 	echo '<div class="page">'.NL;
 	require('pages/'.$p.'.php');

@@ -4,7 +4,7 @@ function fmt_url ($item) {
 	return BASE_URL.'?key='.$item['key'].'&amp;idx='.$item['idx'];
 }
 
-function img_url ($item, $opt) {
+function img_url ($item, $opt=0) {
   if ($opt & 1) 
 		return BASE_URL.'static/data/lbox/'.$item['img'];
 	return BASE_URL.'static/data/thumb/'.$item['img'];
@@ -60,4 +60,33 @@ function vis_imagegroup2D ($d) {
 	itempagefooter($d[1][2]);
 	echo '</div>'.NL; #end container;
 	return true;
+}
+
+function vis_timeline () {
+	global $keys;
+	$tl=array();
+	for($k=1;$k<=count($keys);$k++) {
+		foreach (get_items($k) as $i) {
+			if (empty($i['date'])) continue;
+			$tl[$i['date']][] = $i;
+		}
+	}
+	ksort($tl);
+
+	#output
+	echo '<div class="tlc">'.NL;
+	$xs=936/count($tl);
+	$ys=36;
+	$x=$y=0;
+	foreach ($tl as $ii) {
+		foreach ($ii as $i) {
+			echo ' <div class="tli" style="left:'.$x*$xs.'px;top:'.$y*$ys.'px;"><img alt="" src="'.img_url($i).'" /></div>'.NL;
+			$y=($y+1)%16;
+		}
+		echo '<div class="tli" style="left:'.$x*$xs.'px;top:'.$y*$ys.'px;">'.$i['date'].'</div>';
+		$y=($y+1)%16;
+		$x++;
+	}
+	echo '</div>'.NL;
+	
 }

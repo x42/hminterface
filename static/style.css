@@ -8,45 +8,59 @@ body {
 	color:#ccc;
 	font-family:Andale Mono, Courier, Courier New, monospace;
 	font-size:12px;
+	min-width:940px;
 }
 
 /* HEADER & LOGO */
 div.pageheader {
 	background:#303030;
-	height:110px;
+	height:90px;
 	width:100%;
 }
 
 div.menubox {
-	height:80px;
-	width:964px;
+	height:67px;
 	margin:0px auto;
 }
 div.menubox img {
 	margin:0px .5em;
 }
+
 div.navigation {
 	border-top:4px solid #666;
-	height:26px;
-	padding-top:1px;
 	overflow:hidden;
 	font-size:14px;
 }
 
+div.centerfloat {
+	float:right;
+	position:relative;
+	left:-50%;
+	text-align:left;
+}
+
 div.menubox ul,
 div.navigation ul {
+	list-style:none;
 	margin:0 auto;
-	width:964px;
+}
+
+div.centerfloat ul {
+	position:relative;
+	left:50%;
 }
 
 div.menubox li {
-	list-style:none;
-	display:inline;
-	margin:0 .2em;
+	float:right;
+	margin:24px .2em 0 .2em;
+}
+
+div.menubox li.logoimg {
+	float:left;
+	margin:0 .2em 0 .2em;
 }
 
 div.navigation li {
-	list-style:none;
 	float:left;
 	padding:.2em;
 	margin:0 .2em;
@@ -55,6 +69,10 @@ div.navigation li {
 div.navigation li.active {
 	color:#FFF;
 	font-weight:bold;
+}
+
+div.navigation a {
+	white-space:nowrap;
 }
 
 div.fl a,
@@ -198,4 +216,22 @@ div.itemdesc p {
 }
 div.itemdesc p + p{
 	text-indent: 2em;
+}
+
+/* Timeline View */
+div.tlc {
+	width:1000px;
+	position:relative;
+	margin:1em auto;
+}
+
+div.tli {
+	position:absolute;
+	width:64px;
+	height:36px;
+	overflow:hidden;
+}
+div.tli img {
+	width:64px;
+	height:36px;
 }
