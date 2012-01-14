@@ -81,8 +81,6 @@ function sanitize_key($key) {
 }
 
 function query_data($key, $idx) {
-	$key=sanitize_key(intval($key));
-
 	$rv=get_items($key);
 	$idx=$idx%count($rv);
 

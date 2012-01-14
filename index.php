@@ -10,7 +10,7 @@ $key=$page='';
 
 /* parse request */
 if (isset ($_REQUEST['key']))
-	$key = rawurldecode($_REQUEST['key']); # TODO parse key to int.
+	$key = sanitize_key(intval(rawurldecode($_REQUEST['key'])));
 if (isset ($_REQUEST['idx']))
 	$idx = intval(rawurldecode($_REQUEST['idx']));
 if (isset ($_REQUEST['page']))
@@ -25,10 +25,11 @@ if (in_array($page, $pages)) {
 	$p=$page;
 } else if (!empty($key) && $idx >=0 ) {
 	$d=query_data($key, $idx);
+	$p='';
 }
 
 if (!is_array($d)) {
-	$page='about'; # error ; NX/item
+	$p='interfaces'; # error ; NX/item
 }
 
 /* output */
