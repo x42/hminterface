@@ -26,11 +26,11 @@ if (in_array($page, $pages)) {
 } else if (!empty($key) && $idx >=0 ) {
 	$d=query_data($key, $idx);
 	$p='';
+	if (!is_array($d)) {
+		$p='interfaces'; # error ; NX/item
+	}
 }
 
-if (!is_array($d)) {
-	$p='interfaces'; # error ; NX/item
-}
 
 /* output */
 htmlhead('HMInterface - prospective interface archeology');
