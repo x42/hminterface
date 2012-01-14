@@ -120,6 +120,11 @@ div.page {
 	text-align:justify;
 }
 
+div.textpage {
+	width:442px;
+	margin:0 auto;
+}
+
 div.iflist div.fl {
 	float:left;
 	margin:.5em 10px;
@@ -127,6 +132,16 @@ div.iflist div.fl {
 }
 div.iflist img {
 	width:240px;
+}
+
+div.page h1, 
+div.page h2, 
+div.page h3 {
+	margin:.5em .25em .5em .25em;
+}
+
+div.page p {
+	margin:0 1em .25em 1em;
 }
 
 /* CONTENT -- IHM */

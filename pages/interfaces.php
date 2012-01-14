@@ -1,5 +1,3 @@
-<h1>Interfaces</h1>
-
 <div class="iflist">
 <?php
 global $keys, $keyimg;

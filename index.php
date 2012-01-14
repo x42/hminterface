@@ -17,7 +17,7 @@ if (isset ($_REQUEST['page']))
 	$page = rawurldecode($_REQUEST['page']);
 
 /* process request, gather data */
-$pages=array('about', 'interfaces', 'contribute', 'contact', 'credits', 'legal');
+$pages=array('about', 'interfaces', 'contribute', 'contact', 'credits', 'legal', 'home');
 
 $d=null; $p='interfaces';
 

@@ -1,5 +1,7 @@
-<h1>We need you!</h1>
+<div class="textpage">
+<h1>contribuer</h1>
 
 <p>
-Please contribute.
+We need you! Please contribute.
 </p>
+</div>
