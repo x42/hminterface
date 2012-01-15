@@ -43,6 +43,7 @@ function xhtml_topmenu($req) {
     <div class="menubox">
 			<ul>
 				<li class="logoimg"><a href="?"><img src="static/img/hmi_fr.png" alt="HMInterface.com" class="enabled" /></a></li>'.NL;
+	echo '<li'.js_hover('a_search','search').'><a href="http://www.google.com/?q=site:hminterface.com"><img class="button enabled" id="a_search" src="static/img/search.png" alt="Search" /></a></li>'.NL;
 	if ($req['page'] != 'contribute') 
 		echo '<li'.js_hover('a_contib','contribute_fr').'><a href="?page=contribute"><img class="button enabled" id="a_contib" src="static/img/contribute_fr.png" alt="Contribute" /></a></li>'.NL;
 	else
