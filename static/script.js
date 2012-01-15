@@ -20,3 +20,11 @@ function highlight (elem, onoff) {
 		elem.style.borderStyle='none';
 	}
 }
+
+function detailnfo (id, onoff) {
+	if (onoff) {
+		document.getElementById(id).style.display='block';
+	} else {
+		document.getElementById(id).style.display='none';
+	}
+}

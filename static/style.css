@@ -298,3 +298,37 @@ div.tla {
 	z-index:0;
 	cursor:crosshair;
 }
+
+div.tlx {
+	background: white; 
+	position:absolute;
+	width:128px;
+	min-height:72px;
+	z-index:300;
+	border:10px solid white;
+	border-radius:8px;
+}
+
+div.tlxa {
+	position:absolute;
+	top:-17px;
+	left:-16px;
+	width:16px;
+	height:16px;
+	background: url('img/arrow.png') no-repeat;
+	z-index:400;
+}
+
+div.tlx div.key {
+	text-align:center;
+}
+
+div.tlx div.txt {
+	text-align:left;
+	font-size:80%;
+}
+
+div.tlx img {
+	width:128px;
+	height:72px;
+}

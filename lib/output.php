@@ -83,14 +83,16 @@ function vis_timeline () {
 	$h_nav=(count($keys)+1)*$ys;
 	echo '<div class="tlc" style="min-height:'.$h_tot.'px">'.NL;
 	$x=$y=0;
+	$id=0;
 	foreach ($tl as $ii) {
 		foreach ($ii as $i) {
 			$y=$i['key'] -.33;
-			echo ' <div class="tli" style="left:'.$x*$xs.'px;top:'.$y*$ys.'px;" onclick="go(\''.fmt_url($i).'\');"><img alt="" src="'.img_url($i).'" /></div>'.NL;
+			echo ' <div class="tli" style="left:'.$x*$xs.'px;top:'.$y*$ys.'px;" onclick="go(\''.fmt_url($i).'\');" onmouseover="detailnfo(\'tlx'.$id.'\',1);" onmouseout="detailnfo(\'tlx'.$id.'\', 0);"><img alt="" src="'.img_url($i).'" /></div>'.NL;
+			echo ' <div class="tlx" id="tlx'.$id.'" style="display:none; left:'.($x+.9)*$xs.'px;top:'.($y+1)*$ys.'px;"><div class="tlxa"></div><img alt="" src="'.img_url($i).'" /><div class="key">'.$keys[$i['key']].' - '.$i['date'].'</div><div class="txt">'.$i['title'].'</div></div>'.NL;
+			$id++;
 		}
 		echo '<div class="tla"';
 		echo ' onmouseover="highlight(this,1)" onmouseout="highlight(this,0);"';
-		#echo ' style="width:'.($xs*7).'px;height:'.$h_nav.'px; left:'.$x*$xs.'px;top:0; padding-top:'.(($x%4)*12).'px; padding-bottom:'.((3-($x%4))*12).'px;">';
 		echo ' style="width:'.($xs*7).'px;height:'.$h_nav.'px; left:'.$x*$xs.'px;top:0;">';
 		echo $i['date'].'</div>';
 		$x++;
