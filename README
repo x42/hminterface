@@ -11,20 +11,20 @@ Folder Structure
 ----------------
  *   /lib 
      code-library - functions to generate the html and access the database.
-  	 it currently includes the hardcoded database in /lib/data.php (!)
+     it currently includes the hardcoded database in /lib/data.php (!)
 
  *   /pages
      articles and fixed content (such as "about", "contact" info)
 
  *   /static 
      all static content - images, icons, style-sheets
-	   this includes the content images:
+     this includes the content images:
 
  *   /static/data/lbox
      letter-boxed version of the images scaled according to aspect ratio
-	   maximum geometry is 448x256 pixels.
+     maximum geometry is 448x256 pixels.
 
  *   /static/data/thumb
      thumbnail images - all are exactly 448x256 pixels  (16:9) and cropped
-	   when necessary.
+     when necessary.
 
