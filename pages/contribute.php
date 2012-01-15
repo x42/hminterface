@@ -40,7 +40,7 @@ An example of a fork/merge history may look like this:
 <p>Once done with the update, you should enter a "commit message" - a short informative message of what you did change and save the changes with the "Propose File Change" button bottom right. Doing so will take you to the last step: Notify and ask us to include those changes on the real website: You send us a "pull request": we <em>pull</em> your changes and merge them.</p>
 <div style="text-align:center"><img src="static/img/git/g_hmi5.png" style="width:600px;" /></div>
 <p>Well so far for the basics. Github and git allows you to do much more.. You can combine multiple changes into one pull request. You can track projects,... There are video-tutorials and manual pages. Some of those special features are required to upload binary data - such as images. More on that later.
-</div>
+
 <h2>HTML</h2>
 <p>An exhaustive introduction on HTML and PHP is out of the scope of this writeup. What you should know however is that HTML is a <em>Markup Language</em>: meaning you mark-up certain parts of the text: text-paragraphs for example are <em>enclosed in</em> <tt>&lt;p&gt;<tt> tags; and headlines in <tt>&lt;h1&gt;<tt> (main headline), <tt>&lt;h2&gt;<tt> (section headline), etc. You need to specify both start tags and end tags, the latter being prefixed with a slash <tt>/</tt>: <tt>&lt;p&gt;<tt>, <tt>&lt;/p&gt;<tt>.
 
@@ -51,4 +51,5 @@ A simple example looks like this:
 &lt;p&gt;Another text paragraph.&lt;/p&gt;
 </pre>
 
+</div>
 
