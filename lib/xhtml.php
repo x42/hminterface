@@ -6,6 +6,11 @@ function htmlhead($title, $add='') {
 <head>
   <title><?=$title?></title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="Author" content="RSS" />
+	<link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="static/img/favicon.ico" type="image/x-icon" />
+	<meta name="description" content="archéologie prosprective des interfaces" />
+	<meta name="keywords" content="interface homme machine, man machine interface, archive, IHM, HMI, Université Paris 8, Citu, Maurice Benayoun, Robin Gareus" />
 	<link rel="stylesheet" href="<?=BASE_URL?>static/style.css" type="text/css" media="all"/>
 	<script type="text/javascript" src="<?=BASE_URL?>static/script.js"></script>
   <?=$add?>
