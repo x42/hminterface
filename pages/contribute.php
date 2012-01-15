@@ -11,7 +11,7 @@ If you already know <a href="https://en.wikipedia.org/wiki/Git_%28software%29">G
 <p>
 There are many interfaces around git, in this section we'll concern ourself on using the GitHub web-interface to contribute to the HMI website.
 </p>
-<ol>
+<ol style="font-weight:bold">
 <li>Sign up for a <a href="https://github.com/plans">Free for open source</a> account on github.</li>
 <li>Locate the content you want to modify/update.</li>
 <li>Edit the content (using the website) and save it (summarize the changes).</li>
