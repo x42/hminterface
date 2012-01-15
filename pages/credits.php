@@ -7,7 +7,7 @@ Cette archive a été créée dans le cadre du cours « IHM et conception des ob
 <li>Aparicio, Walter</li>
 <li>Bauche, Stephane</li>
 <li>Benayoun, Florence</li>
-<li>Brisset, G.</li>
+<li>Brisset, Giovanni</li>
 <li>Fouad, Hamidi</li>
 <li>Izraouchène, Sofiane</li>
 <li>Wang, Fuyao</li>
