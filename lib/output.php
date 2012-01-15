@@ -66,25 +66,33 @@ function vis_timeline () {
 	global $keys;
 	$tl=array();
 	for($k=1;$k<=count($keys);$k++) {
+		$idx=0;
 		foreach (get_items($k) as $i) {
 			if (empty($i['date'])) continue;
+			$i['key']=$k;
+			$i['idx']=$idx++;
 			$tl[$i['date']][] = $i;
 		}
 	}
 	ksort($tl);
 
 	#output
-	echo '<div class="tlc">'.NL;
-	$xs=936/count($tl);
-	$ys=36;
+	$xs=735/(count($tl)-1);
+	$ys=40;
+	$h_tot=(count($keys)+1)*$ys;
+	$h_nav=(count($keys)+1)*$ys;
+	echo '<div class="tlc" style="min-height:'.$h_tot.'px">'.NL;
 	$x=$y=0;
 	foreach ($tl as $ii) {
 		foreach ($ii as $i) {
-			echo ' <div class="tli" style="left:'.$x*$xs.'px;top:'.$y*$ys.'px;"><img alt="" src="'.img_url($i).'" /></div>'.NL;
-			$y=($y+1)%16;
+			$y=$i['key'] -.33;
+			echo ' <div class="tli" style="left:'.$x*$xs.'px;top:'.$y*$ys.'px;" onclick="go(\''.fmt_url($i).'\');"><img alt="" src="'.img_url($i).'" /></div>'.NL;
 		}
-		echo '<div class="tli" style="left:'.$x*$xs.'px;top:'.$y*$ys.'px;">'.$i['date'].'</div>';
-		$y=($y+1)%16;
+		echo '<div class="tla"';
+		echo ' onmouseover="highlight(this,1)" onmouseout="highlight(this,0);"';
+		#echo ' style="width:'.($xs*7).'px;height:'.$h_nav.'px; left:'.$x*$xs.'px;top:0; padding-top:'.(($x%4)*12).'px; padding-bottom:'.((3-($x%4))*12).'px;">';
+		echo ' style="width:'.($xs*7).'px;height:'.$h_nav.'px; left:'.$x*$xs.'px;top:0;">';
+		echo $i['date'].'</div>';
 		$x++;
 	}
 	echo '</div>'.NL;

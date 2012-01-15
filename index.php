@@ -17,7 +17,7 @@ if (isset ($_REQUEST['page']))
 	$page = rawurldecode($_REQUEST['page']);
 
 /* process request, gather data */
-$pages=array('about', 'interfaces', 'contribute', 'contact', 'credits', 'legal', 'home');
+$pages=array('about', 'interfaces', 'contribute', 'contact', 'credits', 'legal', 'home', 'timeline');
 
 $d=null; $p='interfaces';
 
@@ -38,7 +38,6 @@ xhtml_topmenu(array('key' => $key, 'page' => $p));
 
 if (is_array($d)) {
 	vis_imagegroup2D($d, 0, 0);
-	#vis_timeline();
 } else {
 	echo '<div class="page">'.NL;
 	require('pages/'.$p.'.php');

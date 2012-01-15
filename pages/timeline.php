@@ -1,0 +1,3 @@
+<?php
+vis_timeline();
+
