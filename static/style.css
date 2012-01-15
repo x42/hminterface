@@ -52,7 +52,9 @@ div.pageheader {
 div.menubox {
 	height:67px;
 	margin:0px auto;
+	max-width:1000px;
 }
+
 div.menubox img {
 	margin:0px .5em;
 }
@@ -118,11 +120,26 @@ div.page {
 	min-height:400px;
 	margin:20px auto 1em auto;
 	text-align:justify;
+	color:#FFF;
 }
 
 div.textpage {
 	width:442px;
 	margin:0 auto;
+}
+div.article {
+	font-family:serif;
+	margin:0 auto;
+	width:640px;
+}
+
+div.page a {
+	color:#CCC;
+	text-decoration:none;
+}
+
+div.page a:hover {
+	text-decoration:underline;
 }
 
 div.iflist div.fl {
@@ -140,8 +157,17 @@ div.page h3 {
 	margin:.5em .25em .5em .25em;
 }
 
+div.page pre,
 div.page p {
 	margin:0 1em .25em 1em;
+}
+div.page p.large {
+	font-size:115%;
+}
+
+div.page ol,
+div.page ul {
+	margin-left:3em;
 }
 
 /* CONTENT -- IHM */
@@ -274,6 +300,7 @@ div.tlc {
 	position:relative;
 	margin:1em auto;
 	border:1px solid #303030;
+	color:#888;
 }
 
 div.tli {
