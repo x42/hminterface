@@ -235,6 +235,7 @@ table.xmatrix td div.date {
 	right:0px;
 	font-weight:bold;
 	z-index:300;
+	border-radius:0px 0px 0px 8px;
 }
 
 table.xmatrix td div.key {
@@ -242,11 +243,13 @@ table.xmatrix td div.key {
 	left:0px;
 	bottom:0px;
 	z-index:300;
+	border-radius:0px 8px 0px 0px;
 }
 table.xmatrix td div.title {
 	right:0px;
 	bottom:0px;
 	margin-left:7em;
+	border-radius:8px 0px 0px 0px;
 }
 
 table.xmatrix td div.dim {
