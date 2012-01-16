@@ -310,11 +310,12 @@ div.tlc {
 
 div.tli {
 	position:absolute;
-	width:64px;
+	width:65px;
 	height:36px;
-	overflow:hidden;
 	z-index:100;
 	cursor:pointer;
+	overflow:hidden;
+	border-right:1px solid transparent;
 }
 div.tli img {
 	width:64px;
@@ -343,7 +344,7 @@ div.tlx {
 
 div.tlxa {
 	position:absolute;
-	top:-17px;
+	top:-16px;
 	left:55px;
 	width:16px;
 	height:16px;

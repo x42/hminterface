@@ -23,8 +23,16 @@ function highlight (elem, onoff) {
 
 function detailnfo (id, onoff) {
 	if (onoff) {
-		document.getElementById(id).style.display='block';
+		document.getElementById('tlx'+id).style.display='block';
+		/*
+		document.getElementById('tli'+id).style.zIndex='1000';
+		document.getElementById('tli'+id).style.borderColor='#666';
+		*/
 	} else {
-		document.getElementById(id).style.display='none';
+		document.getElementById('tlx'+id).style.display='none';
+		/*
+		document.getElementById('tli'+id).style.zIndex='100';
+		document.getElementById('tli'+id).style.borderColor='transparent';
+		*/
 	}
 }
