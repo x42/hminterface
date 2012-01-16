@@ -88,7 +88,7 @@ function vis_timeline () {
 		foreach ($ii as $i) {
 			$y=$i['key'] -.33;
 			echo ' <div class="tli" style="left:'.$x*$xs.'px;top:'.$y*$ys.'px;" onclick="go(\''.fmt_url($i).'\');" onmouseover="detailnfo(\'tlx'.$id.'\',1);" onmouseout="detailnfo(\'tlx'.$id.'\', 0);"><img alt="" src="'.img_url($i).'" /></div>'.NL;
-			echo ' <div class="tlx" id="tlx'.$id.'" style="display:none; left:'.($x+.9)*$xs.'px;top:'.($y+1)*$ys.'px;"><div class="tlxa"></div><img alt="" src="'.img_url($i).'" /><div class="key">'.$keys[$i['key']].' - '.$i['date'].'</div><div class="txt">'.$i['title'].'</div></div>'.NL;
+			echo ' <div class="tlx" id="tlx'.$id.'" style="display:none; left:'.($x*$xs-64).'px;top:'.($y+1)*$ys.'px;"><div class="tlxa"></div><img alt="" src="'.img_url($i).'" /><div class="key">'.$keys[$i['key']].' - '.$i['date'].'</div><div class="txt">'.$i['title'].'</div></div>'.NL;
 			$id++;
 		}
 		echo '<div class="tla"';
