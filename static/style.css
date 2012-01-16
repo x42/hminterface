@@ -288,6 +288,8 @@ div.itemdesc {
 	width:448px;
 	margin:1em auto;
 	text-align:justify;
+	max-height:100px;
+	overflow-y:auto;
 }
 
 div.itemdesc p {
