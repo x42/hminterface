@@ -338,14 +338,15 @@ div.tlx {
 	width:128px;
 	min-height:72px;
 	z-index:300;
-	border:10px solid white;
+	border:3px double black;
+	padding:11px;
 	border-radius:8px;
 }
 
 div.tlxa {
 	position:absolute;
-	top:-16px;
-	left:55px;
+	top:-11px;
+	left:65px;
 	width:16px;
 	height:16px;
 	background: url('img/arrow.png') no-repeat;
