@@ -233,6 +233,7 @@ table.xmatrix td div.date {
 	top:0px;
 	right:0px;
 	font-weight:bold;
+	padding-left:6px;
 	z-index:300;
 	border-radius:0px 0px 0px 8px;
 }
@@ -242,12 +243,13 @@ table.xmatrix td div.key {
 	left:0px;
 	bottom:0px;
 	z-index:300;
+	padding-right:6px;
 	border-radius:0px 8px 0px 0px;
 }
 table.xmatrix td div.title {
 	right:0px;
 	bottom:0px;
-	margin-left:7em;
+	padding-left:6px;
 	border-radius:8px 0px 0px 0px;
 }
 
