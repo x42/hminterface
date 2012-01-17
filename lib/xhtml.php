@@ -38,7 +38,7 @@ function caps($s){
 }
 
 function js_hover($id, $img) {
-  return ' onmouseover="linkhover(\''.$id.'\', \''.$img.'-a.png\')" onmouseout="linkhover(\''.$id.'\', \''.$img.'.png\')"';
+  return ' onmouseover="linkhover(\''.$id.'\', \''.$img.'-c.png\')" onmouseout="linkhover(\''.$id.'\', \''.$img.'.png\')"';
 }
 
 function xhtml_topmenu($req) {
@@ -52,17 +52,17 @@ function xhtml_topmenu($req) {
 	if ($req['page'] != 'contribute') 
 		echo '<li'.js_hover('a_contib','contribute_fr').'><a href="?page=contribute"><img class="button enabled" id="a_contib" src="static/img/contribute_fr.png" alt="Contribute" /></a></li>'.NL;
 	else
-		echo '<li><a href="?page=contribute"><img class="button enabled" id="a_contib" src="static/img/contribute_fr-c.png" alt="Contribute" /></a></li>'.NL;
+		echo '<li><a href="?page=contribute"><img class="button enabled" id="a_contib" src="static/img/contribute_fr-a.png" alt="Contribute" /></a></li>'.NL;
 
 	if ($req['page'] != 'interfaces') 
 		echo '<li'.js_hover('a_if','interfaces_fr').'><a href="?page=interfaces"><img class="button enabled" id="a_if" src="static/img/interfaces_fr.png" alt="Interfaces" /></a></li>'.NL;
 	else
-		echo '<li><a href="?page=interfaces"><img class="button enabled" id="a_if" src="static/img/interfaces_fr-c.png" alt="Interfaces" /></a></li>'.NL;
+		echo '<li><a href="?page=interfaces"><img class="button enabled" id="a_if" src="static/img/interfaces_fr-a.png" alt="Interfaces" /></a></li>'.NL;
 
 	if ($req['page'] != 'about') 
 		echo '<li'.js_hover('a_about','about_fr').'><a href="?page=about"><img class="button enabled" id="a_about" src="static/img/about_fr.png" alt="About" /></a></li>'.NL;
 	else
-		echo '<li><a href="?page=about"><img class="button enabled" id="a_about" src="static/img/about_fr-c.png" alt="About" /></a></li>'.NL;
+		echo '<li><a href="?page=about"><img class="button enabled" id="a_about" src="static/img/about_fr-a.png" alt="About" /></a></li>'.NL;
 	echo ' 
 			</ul>
     <div class="clearer"></div>
